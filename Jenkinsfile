@@ -45,7 +45,7 @@ pipeline {
                                 println('应用打包')
                     
                        
-                                println(mvnHome)
+
                                 
                     
                             }
