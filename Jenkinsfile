@@ -43,7 +43,7 @@ pipeline {
                         timeout(time:20, unit:"MINUTES"){
                             script{
                                 println('应用打包')
-                                tools.PrintMes("应用打包",'green')
+                    
                        
                                 println(mvnHome)
                                 
