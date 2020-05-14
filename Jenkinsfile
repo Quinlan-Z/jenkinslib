@@ -27,7 +27,7 @@ pipeline {
                     script{ //填写运行代码
                         println('获取代码')
                         println("${test}")
-                        tools.printword('test')
+                        tools.printword(test)
                         
                         input id: 'Test', message: '我们是否要继续？', ok: '是，继续吧！', parameters: [choice(choices: ['a', 'b'], description: '', name: 'test1')], submitter: 'lizeyang,admin'
                 }
@@ -43,7 +43,7 @@ pipeline {
                     steps{
                         timeout(time:20, unit:"MINUTES"){
                             script{
-                                tools.PrintMes('green')
+       
                                 println('应用打包')
                     
                        
